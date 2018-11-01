@@ -6,9 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.14-beta" />
+    <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.15-beta" />
     <PackageReference Include="Thuria.Zitidar.Logging" Version="0.0.1-beta" />
-    <PackageReference Include="Thuria.Zitidar.Settings" Version="0.0.2-beta" />
+    <PackageReference Include="Thuria.Zitidar.Nancy" Version="0.0.3-beta" />
+    <PackageReference Include="Thuria.Zitidar.Settings" Version="0.0.3-beta" />
     <PackageReference Include="Thuria.Zitidar.Structuremap" Version="0.0.12-beta" />
   </ItemGroup>
 

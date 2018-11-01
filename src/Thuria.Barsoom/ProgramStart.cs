@@ -2,6 +2,7 @@
 using System.Diagnostics;
 
 using Thuria.Zitidar.Core;
+using Thuria.Zitidar.Nancy;
 using Thuria.Zitidar.Structuremap;
 
 namespace Thuria.Barsoom
@@ -27,7 +28,10 @@ namespace Thuria.Barsoom
 
         thuriaLogger.LogMessage(LogSeverity.Info, $"Starting {thuriaSettings.ApplicationName}");
 
-        // TODO: Start Service Hosting
+        using (var nancyServiceHost = new NancyServiceHost(thuriaBootstrapper.IocContainer))
+        {
+          nancyServiceHost.Start();
+        }
 
         thuriaLogger.LogMessage(LogSeverity.Info, $"Shutting down {thuriaSettings.ApplicationName}");
       }
@@ -36,17 +40,18 @@ namespace Thuria.Barsoom
         if (thuriaLogger == null)
         {
           Console.WriteLine($"Runtime Exception occurred.\n{runtimeException}");
-          Console.WriteLine("Press <ENTER> to terminate application");
         }
         else
         {
           thuriaLogger.LogMessage(LogSeverity.Exception, $"Runtime Exception occurred.\n{runtimeException}");
-          thuriaLogger.LogMessage(LogSeverity.Info, "Press <ENTER> to terminate application");
         }
-
       }
 
-      if (Debugger.IsAttached) { Console.ReadLine(); }
+      if (Debugger.IsAttached)
+      {
+        thuriaLogger.LogMessage(LogSeverity.Info, "Press <ENTER> to terminate application");
+        Console.ReadLine();
+      }
     }
 
     private static void SetupConsole()

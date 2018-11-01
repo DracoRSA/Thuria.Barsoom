@@ -2,9 +2,11 @@
 
 using NUnit.Framework;
 using FluentAssertions;
-
+using Nancy.Bootstrapper;
 using Thuria.Zitidar.Core;
 using Thuria.Zitidar.Logging;
+using Thuria.Zitidar.Nancy;
+using Thuria.Zitidar.Settings;
 using Thuria.Zitidar.Structuremap;
 
 namespace Thuria.Barsoom.Tests
@@ -62,6 +64,33 @@ namespace Thuria.Barsoom.Tests
       var instance = iocContainer.GetInstance<IThuriaSettings>();
       //---------------Test Result -----------------------
       instance.Should().NotBeNull();
+      instance.Should().BeOfType<ThuriaSettings>();
+    }
+
+    [Test]
+    public void Constructor_ShouldRegisterIThuriaNancySettings()
+    {
+      //---------------Set up test pack-------------------
+      var iocContainer = CreateIocContainer();
+      //---------------Assert Precondition----------------
+      //---------------Execute Test ----------------------
+      var instance = iocContainer.GetInstance<IThuriaNancySettings>();
+      //---------------Test Result -----------------------
+      instance.Should().NotBeNull();
+      instance.Should().BeOfType<ThuriaNancySettings>();
+    }
+
+    [Test]
+    public void Constructor_ShouldRegisterINancyBootstrapper()
+    {
+      //---------------Set up test pack-------------------
+      var iocContainer = CreateIocContainer();
+      //---------------Assert Precondition----------------
+      //---------------Execute Test ----------------------
+      var instance = iocContainer.GetInstance<INancyBootstrapper>();
+      //---------------Test Result -----------------------
+      instance.Should().NotBeNull();
+      instance.Should().BeOfType<NancyBootstrapper>();
     }
 
     private IThuriaIocContainer CreateIocContainer()
