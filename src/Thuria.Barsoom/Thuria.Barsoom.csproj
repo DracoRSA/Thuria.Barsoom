@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,11 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.15-beta" />
-    <PackageReference Include="Thuria.Zitidar.Logging" Version="0.0.1-beta" />
-    <PackageReference Include="Thuria.Zitidar.Nancy" Version="0.0.3-beta" />
-    <PackageReference Include="Thuria.Zitidar.Settings" Version="0.0.3-beta" />
-    <PackageReference Include="Thuria.Zitidar.Structuremap" Version="0.0.12-beta" />
+    <PackageReference Include="Thuria.Helium.Akka" Version="0.0.1-beta" />
+    <PackageReference Include="Thuria.Helium.Akka.Structuremap" Version="0.0.1-beta" />
+    <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.16-beta" />
+    <PackageReference Include="Thuria.Zitidar.Logging" Version="0.0.2-beta" />
+    <PackageReference Include="Thuria.Zitidar.Nancy" Version="0.0.4-beta" />
+    <PackageReference Include="Thuria.Zitidar.Settings" Version="0.0.4-beta" />
+    <PackageReference Include="Thuria.Zitidar.Structuremap" Version="0.0.13-beta" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +21,15 @@
     </Content>
     <Content Update="C:\Users\johande\.nuget\packages\thuria.zitidar.logging\0.0.1-beta\contentFiles\any\netstandard2.0\NLog.xsd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\johan\.nuget\packages\thuria.helium.akka\0.0.1-beta\contentFiles\any\netstandard2.0\akka.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\johan\.nuget\packages\thuria.zitidar.logging\0.0.2-beta\contentFiles\any\netstandard2.0\NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\johan\.nuget\packages\thuria.zitidar.logging\0.0.2-beta\contentFiles\any\netstandard2.0\NLog.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 

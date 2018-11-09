@@ -4,6 +4,7 @@ using System.Diagnostics;
 using Thuria.Zitidar.Core;
 using Thuria.Zitidar.Nancy;
 using Thuria.Zitidar.Structuremap;
+using Thuria.Helium.Akka.Structuremap;
 
 namespace Thuria.Barsoom
 {
@@ -17,7 +18,9 @@ namespace Thuria.Barsoom
       {
         SetupConsole();
 
-        var thuriaBootstrapper = StructuremapThuriaBootstrapper.Create().Build();
+        var thuriaBootstrapper = StructuremapThuriaBootstrapper.Create()
+                                                               .WithRegistry(new HeliumTharkRegistry())
+                                                               .Build();
         thuriaLogger           = GetThuriaLogger(thuriaBootstrapper.IocContainer);
         var thuriaSettings     = GetThuriaSettings(thuriaBootstrapper.IocContainer);
 
@@ -47,11 +50,17 @@ namespace Thuria.Barsoom
         }
       }
 
-      if (Debugger.IsAttached)
+      if (!Debugger.IsAttached) { return; }
+
+      if (thuriaLogger == null)
+      {
+        Console.WriteLine("Press <ENTER> to terminate application");
+      }
+      else
       {
         thuriaLogger.LogMessage(LogSeverity.Info, "Press <ENTER> to terminate application");
-        Console.ReadLine();
       }
+      Console.ReadLine();
     }
 
     private static void SetupConsole()
