@@ -7,20 +7,35 @@
 
   <ItemGroup>
     <PackageReference Include="Thuria.Helium.Akka" Version="0.0.1-beta" />
+    <PackageReference Include="Thuria.Helium.Akka.Nancy" Version="0.0.1-beta" />
     <PackageReference Include="Thuria.Helium.Akka.Structuremap" Version="0.0.1-beta" />
-    <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.16-beta" />
-    <PackageReference Include="Thuria.Zitidar.Logging" Version="0.0.2-beta" />
-    <PackageReference Include="Thuria.Zitidar.Nancy" Version="0.0.4-beta" />
-    <PackageReference Include="Thuria.Zitidar.Settings" Version="0.0.4-beta" />
-    <PackageReference Include="Thuria.Zitidar.Structuremap" Version="0.0.13-beta" />
+    <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.17-beta" />
+    <PackageReference Include="Thuria.Zitidar.Logging" Version="0.0.3-beta" />
+    <PackageReference Include="Thuria.Zitidar.Nancy" Version="0.0.6-beta" />
+    <PackageReference Include="Thuria.Zitidar.Serialization.Nancy" Version="0.0.2-beta" />
+    <PackageReference Include="Thuria.Zitidar.Settings" Version="0.0.5-beta" />
+    <PackageReference Include="Thuria.Zitidar.Structuremap" Version="0.0.14-beta" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Thuria.Barsoom.DataModel\Thuria.Barsoom.DataModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="C:\Users\johande\.nuget\packages\thuria.helium.akka\0.0.1-beta\contentFiles\any\netstandard2.0\akka.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="C:\Users\johande\.nuget\packages\thuria.zitidar.logging\0.0.1-beta\contentFiles\any\netstandard2.0\NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="C:\Users\johande\.nuget\packages\thuria.zitidar.logging\0.0.1-beta\contentFiles\any\netstandard2.0\NLog.xsd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\johande\.nuget\packages\thuria.zitidar.logging\0.0.3-beta\contentFiles\any\netstandard2.0\NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\johande\.nuget\packages\thuria.zitidar.logging\0.0.3-beta\contentFiles\any\netstandard2.0\NLog.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="C:\Users\johan\.nuget\packages\thuria.helium.akka\0.0.1-beta\contentFiles\any\netstandard2.0\akka.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

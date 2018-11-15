@@ -6,17 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="5.4.2" />
+    <PackageReference Include="FluentAssertions" Version="5.5.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="NSubstitute" Version="3.1.0" />
     <PackageReference Include="NUnit" Version="3.11.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
     <PackageReference Include="Thuria.Calot.TestUtilities" Version="0.0.7-beta" />
-    <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.16-beta" />
-    <PackageReference Include="Thuria.Zitidar.Logging" Version="0.0.2-beta" />
-    <PackageReference Include="Thuria.Zitidar.Nancy" Version="0.0.4-beta" />
-    <PackageReference Include="Thuria.Zitidar.Settings" Version="0.0.4-beta" />
-    <PackageReference Include="Thuria.Zitidar.Structuremap" Version="0.0.13-beta" />
+    <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.17-beta" />
+    <PackageReference Include="Thuria.Zitidar.Logging" Version="0.0.3-beta" />
+    <PackageReference Include="Thuria.Zitidar.Nancy" Version="0.0.6-beta" />
+    <PackageReference Include="Thuria.Zitidar.Serialization.Nancy" Version="0.0.2-beta" />
+    <PackageReference Include="Thuria.Zitidar.Settings" Version="0.0.5-beta" />
+    <PackageReference Include="Thuria.Zitidar.Structuremap" Version="0.0.14-beta" />
   </ItemGroup>
 
   <ItemGroup>

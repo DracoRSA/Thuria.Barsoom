@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thuria.Barsoom", "Thuria.Barsoom\Thuria.Barsoom.csproj", "{5CA9C50D-4D0C-47C4-99F3-CDFB559C6F9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thuria.Barsoom", "Thuria.Barsoom\Thuria.Barsoom.csproj", "{5CA9C50D-4D0C-47C4-99F3-CDFB559C6F9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thuria.Barsoom.Tests", "Thuria.Barsoom.Tests\Thuria.Barsoom.Tests.csproj", "{915F1A59-7C71-4A63-AF06-7AC57F417DAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thuria.Barsoom.Tests", "Thuria.Barsoom.Tests\Thuria.Barsoom.Tests.csproj", "{915F1A59-7C71-4A63-AF06-7AC57F417DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thuria.Barsoom.DataModel", "Thuria.Barsoom.DataModel\Thuria.Barsoom.DataModel.csproj", "{4A9A1C8E-3581-4E93-8CAF-BC2A02E32D24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{915F1A59-7C71-4A63-AF06-7AC57F417DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{915F1A59-7C71-4A63-AF06-7AC57F417DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{915F1A59-7C71-4A63-AF06-7AC57F417DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9A1C8E-3581-4E93-8CAF-BC2A02E32D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9A1C8E-3581-4E93-8CAF-BC2A02E32D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9A1C8E-3581-4E93-8CAF-BC2A02E32D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9A1C8E-3581-4E93-8CAF-BC2A02E32D24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
