@@ -2,12 +2,11 @@
 using StructureMap;
 using Nancy.Bootstrapper;
 
-using Thuria.Helium.Akka;
 using Thuria.Zitidar.Core;
 using Thuria.Zitidar.Nancy;
 using Thuria.Zitidar.Logging;
-using Thuria.Zitidar.Serialization;
 using Thuria.Zitidar.Settings;
+using Thuria.Zitidar.Serialization;
 using Thuria.Zitidar.Structuremap;
 
 namespace Thuria.Barsoom
@@ -35,11 +34,6 @@ namespace Thuria.Barsoom
       For<IThuriaNancySettings>().Use<ThuriaNancySettings>()
                                  .Singleton();
       For<INancyBootstrapper>().Use<NancyBootstrapper>();
-
-      For<IThuriaStartable>().Use<HeliumActorSystem>()
-                             .Singleton();
-      For<IThuriaStoppable>().Use<HeliumActorSystem>()
-                             .Singleton();
     }
   }
 }

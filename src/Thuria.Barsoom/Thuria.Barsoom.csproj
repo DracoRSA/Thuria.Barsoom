@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Thuria.Helium.Akka" Version="0.0.1-beta" />
     <PackageReference Include="Thuria.Helium.Akka.Nancy" Version="0.0.1-beta" />
     <PackageReference Include="Thuria.Helium.Akka.Structuremap" Version="0.0.1-beta" />
     <PackageReference Include="Thuria.Zitidar.Core" Version="0.0.17-beta" />

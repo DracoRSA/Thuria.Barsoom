@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thuria.Barsoom", "Thuria.Ba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thuria.Barsoom.Tests", "Thuria.Barsoom.Tests\Thuria.Barsoom.Tests.csproj", "{915F1A59-7C71-4A63-AF06-7AC57F417DAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thuria.Barsoom.DataModel", "Thuria.Barsoom.DataModel\Thuria.Barsoom.DataModel.csproj", "{4A9A1C8E-3581-4E93-8CAF-BC2A02E32D24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thuria.Barsoom.DataModel", "Thuria.Barsoom.DataModel\Thuria.Barsoom.DataModel.csproj", "{4A9A1C8E-3581-4E93-8CAF-BC2A02E32D24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
