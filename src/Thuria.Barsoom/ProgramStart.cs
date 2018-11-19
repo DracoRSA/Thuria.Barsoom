@@ -19,7 +19,7 @@ namespace Thuria.Barsoom
         SetupConsole();
 
         var thuriaBootstrapper = StructuremapThuriaBootstrapper.Create()
-                                                               .WithRegistry(new HeliumTharkRegistry())
+                                                               .WithRegistry(new HeliumTharkIocRegistry())
                                                                .WithRegistry(new HeliumAkkaIocRegistry())
                                                                .Build();
         thuriaLogger           = GetThuriaLogger(thuriaBootstrapper.IocContainer);
